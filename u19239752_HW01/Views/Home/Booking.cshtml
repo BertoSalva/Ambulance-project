@@ -1,0 +1,116 @@
+﻿
+@{
+    ViewBag.Title = "Booking";
+}
+
+<h2 class="text-center">Select a service...</h2>
+<p class="text-center">Please select the service for which you want to make a booking for on this page.</p>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="section">
+                <img style="width: 100px;" src="~/Content/Images/air.jpg" height="100" width="60" >
+                <div>
+                    <h3>  @Html.ActionLink("Air Ambulance", "Bookpage", "Home", new {headerText= "Air Ambulance"}, null)</h3>
+                </div>
+                <div>
+                    <p > Air ambulance help in the transfer of patients across long distances in both emergency and non-emergency situations</p>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="section">
+                <img style="width: 100px;" src="~/Content/Images/als.jpg" height="100" width="60" >
+                <div>
+                    <h3> @Html.ActionLink("Advanced Life Support (ALS)", "Bookpage", "Home", new { headerText = "Advanced Life Support (ALS)" }, null)</h3>
+                </div>
+                <div>
+
+                    <p>ALS ambulance is staffed by a Paramedic and is used to transport patients who require high level of care</p>
+                    <br>
+                    <br>
+                    <br>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="section">
+                <img style="width: 100px;" src="~/Content/Images/bsl.jpg" height="100" width="60" >
+                <div>
+                    <h3> @Html.ActionLink("Basic Life Suppor", "Bookpage", "Home", new { headerText = "Basic Life Support " }, null)</h3>
+                    
+                </div>
+                <div>
+                    <p>BLS ambulance is provides transport to patients who are in a non life threating condition</p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="section">
+                <img style="width: 100px;" src="~/Content/Images/event.jpg" height="100" width="60" >
+                <div>
+                    <h3> @Html.ActionLink("Event Medical Ambulance", "Bookpage", "Home", new { headerText = "Event Medical Ambulance" }, null)</h3>
+                </div>
+                <div>
+                    <p> Ambulances that are stationed at events, such as concerts, sports games, and festivals, to provide medical assistance</p>
+                    <br>
+                    <br>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="section">
+                <img style="width: 100px;" src="~/Content/Images/patient.jpg" height="100" width="60" >
+                <div>
+                    <h3> @Html.ActionLink("Patient Life Support", "Bookpage", "Home", new { headerText = "Patient Life Support" }, null)</h3>
+                </div>
+                <div>
+                    <p>The most basic type of transport for patients requiring ambulatory support to and from the hospital</p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                   
+                   
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="section">
+                <img style="width: 100px;" src="~/Content/Images/medical.jpg" height="100" width="60" >
+                <div>
+                    <h3> @Html.ActionLink("Medical Utility Transport", "Bookpage", "Home", new { headerText = "Medical Utility Transport" }, null)</h3>
+                </div>
+                <div>
+                    <p> A state-of-the-art small of large van that is designed to facilitate the movement and transport of patients</p>
+                    <br>
+                    <br>
+                    
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .section {
+        background-color: #f2f2f2;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+</style>

@@ -1,0 +1,143 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<style>
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: green 2px solid;
+        border-radius: 5px;
+        margin: 50px 300px 50px 300px;
+        padding: 20px;
+    }
+</style>
+
+
+<script>
+    $(document).ready(function () {
+        $('#datetimepicker').datepicker({
+            format: 'yyyy-mm-dd hh:ii',
+            autoclose: true
+        });
+    });
+</script>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+</head>
+
+<div class="center">
+    @using (Html.BeginForm("Factory", "Home", FormMethod.Post))
+    {
+        <form>
+            <H3 style="color:green">@ViewBag.HeaderText</H3>
+            
+            <br />
+            <br />
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text "> <i class='fas fa-address-card'></i> </span>
+
+                </div>
+                <input name="name" class="form-control" placeholder="Full Name" type="text">
+            </div>
+            <br />
+            <!-- form-group// -->
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class='fas fa-phone'></i>
+                    </span>
+                </div>
+                <br />
+                <input name="phone" class="form-control" placeholder="Phone No. " type="number">
+            </div> <!-- form-group// -->
+            <br />
+
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"> <i class='fas fa-calendar-alt'></i></span>
+                </div>
+                <input type="text" id="datetimepicker" name="datetimepicker" class="form-control" />
+                
+            </div>
+
+
+            <br /> <!-- form-group// -->
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class='fas fa-file-medical'></i>
+                    </span>
+                </div>
+                <select class="form-control" name="accidentType">
+                    <option value="None">Accident Type</option>
+                    <option value="Assembly Line">Assembly Line</option>
+                    <option value="Texttile">Texttile</option>
+                    <option value="Electronics">Electronics</option>
+                </select>
+            </div>
+            <br />
+            <!-- form-group end.// -->
+
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"><i class='fas fa-map-marked-alt'></i> </span>
+                </div>
+                <input class="form-control" placeholder="Address" type="text" name="address">
+            </div>
+            <!-- form-group// -->
+
+            <br />
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class='fas fa-ambulance'></i>
+
+
+                    </span>
+                </div>
+                <select class="form-control" name="vehicle">
+                    <option value="None">Vehicle</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div> <!-- form-group end.// -->
+
+            <br />
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class='far fa-user-circle'></i>
+
+
+                    </span>
+                </div>
+                <select class="form-control" name="driver">
+                    <option value="None">Driver</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div> <!-- form-group end.// -->
+            <br />
+            <input type="submit" class="btn btn-success" value="Submit" />
+        </form>
+    }
+
+
+</div>

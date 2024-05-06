@@ -1,0 +1,63 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<main>
+   
+    <div class="row">
+    
+        <section class="col-md-6" aria-labelledby="gettingStartedTitle">
+            <div class ="row">
+                <div class="col-md-12">
+                    <h2 style="text-align: center; color: darkcyan">A real O.K team here to try and save yous</h2>
+                    <p>
+                        If you are still breathing once you've reached the hospital we've done our job successfully
+                    </p>
+                    <div style="text-align:center">
+
+                        <button  type="button" onclick="location.href='@Url.Action("Booking","Home")'">
+                               Book Ambulance
+                        </button>
+
+                    </div>
+                   
+                </div>
+               
+            </div>
+        </section>
+        <section class="col-md-6" aria-labelledby="imageTitle">
+            <div class="row">
+                <div class="col-md-12">
+                    <img style="width: 300px;" src="~/Content/Images/logo.png" height="300" width="60" class="rounded-pill">
+                </div>
+
+            </div>
+
+        </section>
+        <section class="col-md-6" aria-labelledby="sos" style="background-color: darkgrey;">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 style="text-align:center; color: red;">Emergency</h1>
+                    <p>
+                        Only hit the button for real emergencies mind you... <br />
+                        Stepping on a thumbtack at 3am while doing arts and crafts is not an emergency
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="col-md-6" aria-labelledby="sosTitle">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div style="text-align:center; margin-top: 20px;">
+                        <button type="button" class="btn btn-danger rounded-circle" style="width: 250px; height: 250px; font-size: 25px;">SOS</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+       
+    </div>
+</main>
